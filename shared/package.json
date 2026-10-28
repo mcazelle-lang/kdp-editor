@@ -1,0 +1,6 @@
+{
+  "name": "book-creator-shared",
+  "private": true,
+  "type": "module",
+  "description": "Logique métier partagée (specs KDP, modèles de pages, couvertures, marketing) — consommée en source par le serveur et le client."
+}

@@ -1,0 +1,17 @@
+node_modules/
+client/dist/
+client/.angular/
+server/data/
+samples/
+*.log
+.DS_Store
+server/.env
+.firebase/
+firebase-debug.log
+
+# Données personnelles : jamais dans le dépôt (public)
+KDP_*.xlsx
+Low content *.xlsx
+server/.env.*
+!server/.env.example
+.claude/skills/kdp-marketing-low-content/references/audit-idees-2020.md

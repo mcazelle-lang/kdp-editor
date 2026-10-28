@@ -1,0 +1,41 @@
+{
+  "name": "book-creator-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch --clear-screen=false src/index.ts",
+    "start": "tsx src/index.ts",
+    "import:ideas": "tsx src/scripts/import-ideas.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test ../shared/test/kdp.test.ts ../shared/test/marketing.test.ts ../shared/test/niches.test.ts test/server.test.ts test/agent.test.ts test/niches.test.ts ../shared/test/kdp-account.test.ts test/kdp.test.ts ../shared/test/kdp-reports.test.ts",
+    "samples": "tsx src/scripts/samples.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.134.0",
+    "@fontsource/abril-fatface": "^5.3.0",
+    "@fontsource/bebas-neue": "^5.3.0",
+    "@fontsource/caveat": "^5.3.0",
+    "@fontsource/dancing-script": "^5.3.0",
+    "@fontsource/lora": "^5.3.0",
+    "@fontsource/montserrat": "^5.3.0",
+    "@fontsource/open-sans": "^5.3.0",
+    "@fontsource/pacifico": "^5.3.0",
+    "@fontsource/playfair-display": "^5.3.0",
+    "@google/genai": "^2.30.0",
+    "exceljs": "^4.4.0",
+    "express": "^5.3.0",
+    "image-size": "^2.0.4",
+    "multer": "^2.4.0",
+    "pdfkit": "^0.20.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/multer": "^2.3.0",
+    "@types/node": "^26.6.5",
+    "@types/pdfkit": "^0.17.6",
+    "tsx": "^4.23.15",
+    "typescript": "~5.9.2"
+  }
+}

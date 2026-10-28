@@ -1,0 +1,20 @@
+{
+  "name": "book-creator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cr\u00e9ation de carnets low-content pour l'auto-\u00e9dition Amazon KDP (Angular + Node).",
+  "scripts": {
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install",
+    "dev": "concurrently -k -n api,web -c blue,magenta \"npm --prefix server run dev\" \"npm --prefix client start\"",
+    "build": "npm --prefix client run build",
+    "start": "npm --prefix server start",
+    "test": "npm --prefix server test",
+    "typecheck": "npm --prefix server run typecheck",
+    "import:ideas": "npm --prefix server run import:ideas",
+    "samples": "npm --prefix server run samples",
+    "deploy:hosting": "firebase deploy --only hosting"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.5"
+  }
+}
